@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="text-center">
+        <h3 class="mt-5">Greate Quotes</h3>
+        <form (ngSubmit) = "fetchData(details)" #details = "ngForm">
+            <div class="form-group mt-4">
+                <input type="text" class="form-control" [(ngModel)] = "quotes.publisher" name="publisher" placeholder="Enter Publisher" />
+            </div>
+
+            <div class="form-group mt-4">
+                <input type="text" class="form-control" [(ngModel)] = "quotes.author" name="author" placeholder="Enter Author" />
+            </div>
+
+            <div class="form-group mt-4">
+                <input type="text" class="form-control" [(ngModel)] = "quotes.quote" name="quote" placeholder="Enter Quote" />
+            </div>
+
+            <div class="form-group mt-4">
+                <input type="date" class="form-control" [(ngModel)] = "quotes.date" name="date" />
+            </div>
+
+            <div class="form-group mt-4">
+                <button class="btn btn-primary">Add Quote</button>
+            </div>
+
+        </form>
+    </div>
+</div>
