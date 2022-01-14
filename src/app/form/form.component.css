@@ -1,5 +1,5 @@
-body {}
 .container-fluid {
     height: auto;
     width: 750px;
+    background-color: rgb(131, 228, 131);
 }
